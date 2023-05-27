@@ -1,14 +1,44 @@
 {
   "name": "hooks-js",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "author": "Ashraf Mollah <mollah.dev@gmail.com> (https://mollah.dev)",
+  "description": "A simple and efficient EventManager for JavaScript",
+  "keywords": [
+    "hooks",
+    "events",
+    "filters",
+    "actions",
+    "ashraf",
+    "package"
+  ],
+  "email": "mollah.dev@gmail.com",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "bugs": {
+    "url": "https://github.com/mollahdev/hooks-js/issues"
+  },
+  "homepage": "https://github.com/mollahdev/hooks-js#readme",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build:watch": "tsc && vite build --watch",
+    "dev": "vite"
   },
   "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.1",
+    "@types/node": "^20.2.3",
+    "rollup-plugin-typescript-paths": "^1.4.0",
+    "tslib": "^2.5.2",
     "typescript": "^5.0.2",
     "vite": "^4.3.2"
   }
