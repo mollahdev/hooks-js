@@ -1,2 +1,3 @@
-const one = 'hello world'
-console.log(one)
+// import CreateHook from "@/createHook"
+
+// const hook = new CreateHook();
