@@ -35,9 +35,22 @@
         "dev": "vite",
         "format": "npx prettier --write ."
     },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,json,css,md,html,ts}": [
+            "npm run build",
+            "npm run format"
+        ]
+    },
     "devDependencies": {
         "@rollup/plugin-typescript": "^11.1.1",
         "@types/node": "^20.2.3",
+        "husky": "^8.0.3",
+        "lint-staged": "^13.2.2",
         "prettier": "2.8.8",
         "rollup-plugin-typescript-paths": "^1.4.0",
         "tslib": "^2.5.2",
