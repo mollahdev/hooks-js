@@ -1,12 +1,12 @@
 import CreateHook from '@/createHook';
 
-const hook = new CreateHook();
-const addAction = hook.addAction.bind(hook);
-const doAction = hook.doAction.bind(hook);
-const removeAction = hook.removeAction.bind(hook);
-const addFilter = hook.addFilter.bind(hook);
-const applyFilters = hook.applyFilters.bind(hook);
-const removeFilter = hook.removeFilter.bind(hook);
+const hooks = new CreateHook();
+const addAction = hooks.addAction.bind(hooks);
+const doAction = hooks.doAction.bind(hooks);
+const removeAction = hooks.removeAction.bind(hooks);
+const addFilter = hooks.addFilter.bind(hooks);
+const applyFilters = hooks.applyFilters.bind(hooks);
+const removeFilter = hooks.removeFilter.bind(hooks);
 
 export {
     addAction,
@@ -17,4 +17,4 @@ export {
     removeFilter,
 };
 
-export default hook;
+export default hooks;

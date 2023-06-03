@@ -1,5 +1,5 @@
 import CreateHook from '@/createHook';
-declare const hook: CreateHook;
+declare const hooks: CreateHook;
 declare const addAction: (hookName: string, callback: Function, priority?: number | undefined) => {
     [key: string]: import("./types").HookObject[];
 };
@@ -17,4 +17,4 @@ declare const removeFilter: (hookName: string, callback: Function) => {
     [key: string]: import("./types").HookObject[];
 };
 export { addAction, doAction, removeAction, addFilter, applyFilters, removeFilter, };
-export default hook;
+export default hooks;
