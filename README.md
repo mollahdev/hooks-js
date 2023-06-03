@@ -20,7 +20,7 @@ npm i @mollahdev/hooks-js
 -   applyFilters( 'hookName', data )
 -   removeFilter( 'hookName', callback )
 
-#### addAction Hook
+### addAction Hook
 
 addAction is the hook that the hooks-js execute when you call the doAction. The callback function of addAction expect some data that will be passed from doAction. The data can be optional.
 
@@ -42,7 +42,7 @@ addAction('core/ready', callback);
 hooks.addAction('core/ready', callback, 50);
 ```
 
-#### doAction Hook
+### doAction Hook
 
 doAction is the hook that the hooks-js use to run all the addActions you used in your application. You can pass any typeof of data you want.
 
@@ -57,7 +57,7 @@ doAction('core/ready', { user: 'Jhone Doe' });
 hooks.doAction('core/ready');
 ```
 
-#### addFilter Hook
+### addFilter Hook
 
 addFilter hook allows you to modify the data that has been passed through applyFilters hook. addFilter hooks should be declared before applyFilters. The callback of addFilter receives the data used in applyFilters, the callback must return the data, You can modify the data before returning.
 
@@ -75,7 +75,7 @@ addFilter('namespace/current-user', callback);
 hooks.addFilter('namespace.user', callback, 90);
 ```
 
-#### applyFilters Hook
+### applyFilters Hook
 
 This hook invokes all the callback attached to addFilter hook. From the addFilter hook you can modify the data passing throw applyFilters.
 
@@ -99,7 +99,7 @@ const anotherUser = hooks.applyFilters('namespace.user', {
 console.log(anotherUser); // {role: 'editor', hasAccess: false}
 ```
 
-#### removeAction/removeFilter Hook
+### removeAction/removeFilter Hook
 
 Remove any added addAction/addFilter with given hook name and same callback
 
