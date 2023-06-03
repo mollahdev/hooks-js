@@ -8,7 +8,7 @@
 npm i @mollahdev/hooks-js
 ```
 
-> A simple and efficient event manager for JavaScript for frontend.
+> A simple and efficient event manager for JavaScript.
 > This package assumes that your code will run in an ES2015+ environment.
 
 ### API Usage
