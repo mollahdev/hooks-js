@@ -1,5 +1,5 @@
 {
-  "name": "hooks-js",
+  "name": "@mollahdev/hooks-js",
   "version": "0.0.1",
   "author": "Ashraf Mollah <mollah.dev@gmail.com> (https://mollah.dev)",
   "description": "A simple and efficient EventManager for JavaScript",
