@@ -5,11 +5,11 @@ import { HOOK } from '@/types/enums';
 
 export default class CreateHook {
     @Validate('addAction')
-    addAction( hookName: string,
+    addAction(
+        hookName: string,
         callback: Function,
         priority?: number
     ): StoreType[HOOK.ACTIONS] {
-
         addHook(HOOK.ACTIONS, hookName, callback, priority || 10, null);
         return STORE[HOOK.ACTIONS];
     }
@@ -17,7 +17,7 @@ export default class CreateHook {
     @Validate('doAction')
     doAction(hookName: string, data: unknown): StoreType[HOOK.ACTIONS] {
         const hooks = STORE[HOOK.ACTIONS][hookName];
-                (hooks || []).forEach((item) => item.callback(data));
+        (hooks || []).forEach((item) => item.callback(data));
 
         return STORE[HOOK.ACTIONS];
     }
@@ -36,8 +36,8 @@ export default class CreateHook {
         const hooks = STORE[HOOK.FILTERS][hookName];
         if ((hooks || []).length > 0) {
             (hooks || []).forEach((item) => {
-                    item.context = content;
-                    content = item.callback(content);
+                item.context = content;
+                content = item.callback(content);
             });
         }
 

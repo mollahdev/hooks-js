@@ -8,11 +8,8 @@ const addFilter = hook.addFilter.bind(hook);
 const applyFilters = hook.applyFilters.bind(hook);
 const removeFilter = hook.removeFilter.bind(hook);
 
-
-
-
 export {
-            addAction,
+    addAction,
     doAction,
     removeAction,
     addFilter,
