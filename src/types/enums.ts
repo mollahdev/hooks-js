@@ -1,4 +1,4 @@
 export enum HOOK {
     ACTIONS = 'actions',
-    FILTERS = 'filters'
+    FILTERS = 'filters',
 }

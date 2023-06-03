@@ -1,29 +1,27 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "lib": ["esnext", "dom"],
-    "useDefineForClassFields": true,
-    "skipLibCheck": true,
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "lib": ["esnext", "dom"],
+        "useDefineForClassFields": true,
+        "skipLibCheck": true,
 
-    /* Bundler mode */
-    "moduleResolution": "node",
-    "isolatedModules": true,
-    "noEmit": true,
+        /* Bundler mode */
+        "moduleResolution": "node",
+        "isolatedModules": true,
+        "noEmit": true,
 
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUncheckedIndexedAccess": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "experimentalDecorators": true,
-    "baseUrl": "./src",
-    "paths": {
-      "@/*": [
-        "*"
-      ]
-    }
-  },
-  "include": ["src"]
+        /* Linting */
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUncheckedIndexedAccess": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "experimentalDecorators": true,
+        "baseUrl": "./src",
+        "paths": {
+            "@/*": ["*"]
+        }
+    },
+    "include": ["src"]
 }
