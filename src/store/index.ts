@@ -67,8 +67,8 @@ export const addHook = <T extends string>(
 export const removeHook = <T extends string>(
     type: HookType,
     hookName: T,
-    callback: Function,
-    context: unknown
+    callback?: Function,
+    context?: unknown
 ) => {
     let handlers, handler, i;
 
