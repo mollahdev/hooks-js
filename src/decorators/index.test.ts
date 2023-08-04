@@ -13,7 +13,7 @@ describe('validate()', () => {
                 let passed = true;
                 class Hooks {
                     @Validate(type)
-                    [type](...a: any[]) {
+                    [type]() {
                         passed = false;
                     }
                 }
@@ -28,7 +28,7 @@ describe('validate()', () => {
                 let passed = true;
                 class Hooks {
                     @Validate(type)
-                    [type](...a: any[]) {
+                    [type]() {
                         passed = false;
                     }
                 }

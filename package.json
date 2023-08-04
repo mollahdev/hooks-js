@@ -1,6 +1,6 @@
 {
     "name": "@mollahdev/hooks-js",
-    "version": "0.0.2",
+    "version": "1.0.0",
     "author": "Ashraf Mollah <mollah.dev@gmail.com> (https://mollah.dev)",
     "description": "A simple and efficient EventManager for JavaScript",
     "keywords": [
@@ -30,6 +30,7 @@
     "homepage": "https://github.com/mollahdev/hooks-js#readme",
     "type": "module",
     "scripts": {
+        "format": "npx prettier --write .",
         "build": "tsc && vite build",
         "build:watch": "tsc && vite build --watch",
         "dev": "vite",
