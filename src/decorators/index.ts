@@ -32,6 +32,9 @@ const ValidateDecorator: ValidateDecoratorType<HookActionsName> = {
         };
     },
 
+    /**
+     * no need to test this as addHook is tested already
+     */
     doAction(
         _target: any,
         _propertyKey: string,
@@ -48,6 +51,9 @@ const ValidateDecorator: ValidateDecoratorType<HookActionsName> = {
         };
     },
 
+    /**
+     * no need to test this as removeHook is tested already
+     */
     removeAction(
         _target: any,
         _propertyKey: string,
@@ -65,6 +71,9 @@ const ValidateDecorator: ValidateDecoratorType<HookActionsName> = {
         };
     },
 
+    /**
+     * no need to test this as addHook is tested already
+     */
     applyFilters(
         _target: any,
         _propertyKey: string,
@@ -102,6 +111,9 @@ const ValidateDecorator: ValidateDecoratorType<HookActionsName> = {
         };
     },
 
+    /**
+     * no need to test this as removeHook is tested already
+     */
     removeFilter(
         _target: any,
         _propertyKey: string,

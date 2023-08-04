@@ -5,7 +5,14 @@ const STORE: StoreType = {
     filters: {},
 };
 
+export const clearStore = () => {
+    STORE.actions = {};
+    STORE.filters = {};
+};
+
 export const hookInsertSort = <T extends HookObject[]>(hooks: T): T => {
+    if (!Array.isArray(hooks)) hooks;
+
     let hook: HookObject,
         forwardIndex: number,
         backwordIndex: number,
@@ -56,7 +63,7 @@ export const addHook = <T extends string>(
         }
 
         hooks.push(hookObject);
-        hooks = hookInsertSort(hooks);
+        hooks = hookInsertSort(hooks)!;
     } else {
         hooks = [hookObject];
     }
